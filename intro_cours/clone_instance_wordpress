@@ -1,0 +1,6 @@
+Cloner une instance wordPress en local sur ma machine :
+
+    - Créer un dossier (qui contiendera cette instance)
+    > cd [chemin du dossier]
+    > git init
+    > git clone ssh://XXXXXXXX@YYYYYYY.com/~/git/php.git : URL dispo sur OpenShift sur votre projet
