@@ -1,0 +1,13 @@
+La commande grep nous permet de chercher un chaine de caractère dans un fichier donné : grep -chaine voulue- -nom_du_fichier-
+
+le resultat de la commande nous affichera alors la ligne dans laquelle se trouve la chaine de caractère
+
+voici les options possibles a ajouter a la suite de grep : 
+
+    -v affiche les lignes ne contenant pas la chaîne
+    -c compte le nombre de lignes contenant la chaîne
+    -n chaque ligne contenant la chaîne est numérotée
+    -x ligne correspondant exactement à la chaîne
+    -l affiche le nom des fichiers qui contiennent la chaîne
+
+
