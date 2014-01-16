@@ -1,0 +1,34 @@
+Fork, clone, push & pull Request :
+
+
+    1. Forker (= faire une copie du dépot vers notre interface)
+
+    Quand vous êtes sur le dépot d'un autre utilisateur : cliquez sur "Fork"
+
+    2.  Cloner le dépot en local : (cf. plus bas)
+
+    >git clone sshXXX.git   (URL ssh dispo en bas à droite sur la page du dépot cloné)        
+
+    3. Commiter : (une fois des modifs ou ajouts effectués en local) 
+
+    > git add [nom du fichier]      => ex:  git add README.md   (pour tout ajouter : > git add *)
+
+    > git commit -m "..."
+
+   4. Push (= envoyer les modifications, commits, ... sur mon interface gitHub (serveur))
+
+     > git push -u origin master       (le master n'est pas obligatoire, je crois)
+
+   5. Pull Request (= envoyer les modifications à l'utilisateur qui possède le dépot original)
+
+    Sur mon interface (dépot copié), cliquer à droite sur "Pull Request"
+
+    Puis cliquer sur "New pull request"
+
+    La nouvelle page vous indique si il y a des conflits ou non => cliquer sur "Click to create a pull request for this comparison"
+
+    Saisissez un nom (et un commentaire si vous le souhaitez), puis cliquer sur "Send pull request"
+
+   6. Rapatriller les modifications de l'utilisateur vers notre interface (=mettre à jour le dépot copié):
+
+     > git pull https://XXXXX  master => ex: git pull https://github.com/elodie91/isep_shell.git master
