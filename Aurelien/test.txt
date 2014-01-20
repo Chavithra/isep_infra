@@ -1,7 +1,5 @@
 <<<<<<< HEAD
-C'est moi Thomas
-
+Ceci est un test.
 =======
-C'est moi Thomas
-
+Ceci est un test.
 >>>>>>> a25c0be18377a9f91556df756e006545de77b637

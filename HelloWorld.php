@@ -1,7 +1,9 @@
 <<<<<<< HEAD
-C'est moi Thomas
+<?php
 
+echo 'Hello World !';
 =======
-C'est moi Thomas
+<?php
 
+echo 'Hello World !';
 >>>>>>> a25c0be18377a9f91556df756e006545de77b637
