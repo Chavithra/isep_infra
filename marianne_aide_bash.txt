@@ -1,0 +1,68 @@
+============================= CLE PUBLIQUE =============================
+
+POUR LES SYSTEMES D'EXPLOITATION BASE UNIX (Linux ou Mac) / pour les autres utiliser PUTTY (windows)
+
+Recherche : cd ~/.ssh 
+chercher tous les fichiers en .pub grâce à la commande ls. Les fichiers en .pub sont les clés publiques, les même fichiers du même nom sans l'extension des clés privées 
+
+Création : ssh-keygen
+
+affichage : utiliser les commandes "less" ou "cat"  
+
+=============================== FORKER UN DEPOT  ===============================
+
+Aller sur le site github, rechercher le dépôt à forker et cliquer sur le bouton "fork"
+
+=============================== COMMIT TERMINAL ===============================
+
+Depuis le terminal créer un dossier. 
+Utiliser le lien ssh sur git du dépôt et faire "git clone" + lien
+Avant chaque travail faire un git pull afin d'obtenir la dernière version 
+A la fin de la tâche faire un commit afin de tenir au courant les autres utilisateurs de l'avancement. Cela permet aussi de répertiorer toutes les améliorations faites au fur et à mesure
+Après le commit faire un push envoie les données au server github 
+
+=============================== COMMANDES ===============================
+ls : permet de lister tous les fichiers
+ls -l : permet de lister tous les fichiers et de faire une liste organisée
+less : affiche temporairement le contenu d'un fichier - pour arreter l'affichage il faut appuyer sur "q"
+cat : affiche dans le terminal le contenu du fichier demandé
+mkdir : créer un nouveau dossier
+grep : trouve les lignes contenant le mot clef ajouté 
+sed : permet de couper une partie d'un document selon les critères ajoutés
+curl -s : récupère le code source de l'URL suivant la commande 
+IFS : Internal Field Separator : Vérifie et supprime tous les sauts de ligne 
+
+Quelques commandes avec SED: 
+sed '/^\s*$/d' : permet de retirer tous les sauts de ligne
+sed 's/<[^>]*>//g' : permet de supprimer toutes les balises (utile pour le code source d'un site)
+
+Commande avec IFS : 
+#Ajoute sans les sauts de ligne du fichier.txt chaque ligne dans un tableau
+IFS=$'\n' monTableau=( $(cat "fichier.txt") ) 
+
+Lire un tableau : 
+Connaitre la longueur d'un tableau : tLen=${#monTableau[@]}
+afficher une ligne définie d'un tableau : echo ${monTableau[3]}
+afficher une ligne d'un tableau grâce à une variable : echo ${monTableau[$i]}
+
+Lire ligne par ligne un document : 
+$cat fichier.txt| while read line
+
+Utiliser une boucle for : 
+for (( i=0; i<10; i++ ));
+do
+#lignes de commandes 
+done
+ 
+COMMANDES GIT HUB
+git clone : cloner un dépôt sur notre l'ordinateur 
+git pull : puller la dernière version du git 
+git commit -m : fais un commit, une chaîne de caractère ajoutée à la fin sera l'intitulé du commit 
+git push : push sur le server github les dernières versions ajoutées 
+
+
+Gestion d'un fichier : 
+> : ajouter dans un fichier en ecrasant ce qu'il y avait auparavant 
+>> : ajouter à la suite dans un fichier 
+< : depuis un fichier 
+
