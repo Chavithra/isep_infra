@@ -1,0 +1,26 @@
+|| Quelques commandes utiles sous Unix ||
+
+
+
+
+man (Manuel) : Pour afficher le manuel d'une commande
+
+cd (Change Directory) : Pour se déplacer dans les répertoires
+
+mv (Move) : Pour déplacer ou renommer un fichier/dossier
+
+cp (Copy) : Pour copier un fichier/dossier (utiliser l'opt -r pour une action récursive) 
+
+rm (Remove) : Pour efface un fichier/dossier (utiliser l'opt -r pour une action récursive) 
+
+rmdir (Remove Directory) : Supprime un répertoire vide
+
+pwd (Print Working Directory) : Affiche le répertoire courant
+
+locate : Permet de rechercher un fichier, plus rapide que "find" car se base sur une base de fichiers indéxés.
+
+ps (Processes Snapshot) : Affiche la liste des processus en cours d'exécution
+
+kill -9 PID : Arrête le processus correspondant au PID
+
+apt-get : Outil très utile pour l'installation/suppression de paquet
