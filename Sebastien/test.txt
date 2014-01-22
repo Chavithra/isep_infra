@@ -1,0 +1,136 @@
+w #donne un tableau recap des processus en cours
+
+uptime #depuis combien de temps la machine est en marche
+
+tload #donne un graph de la charge (nombre moyen de processus en train de tourner et que réflame l'utilisation du processeur
+
+who #qui est connecté à la machine
+
+date #donne la date
+
+
+pts means terminal, graphic console
+
+from means the IP address of the user
+
+ps: listed the processes in a static way, only processes launched from this console
+
+hop: listed the processes dynamicaly, in real time
+
+bash: command invite which handles the commands you type
+
+PID: identication number of a process
+
+ps -ef: list all processes in all the consoles
+
+ps -ejH: group processes in a tree form
+ps -u USER: list the processes launched by the specified user
+top list processes by their %CPU
+
+Ctrl + C: interrupt a commmand, in a normal closing way
+
+kill + PID: interrupt a process
+
+kill -9 + PID: kille the specified process, but whithout having the process taking the time he needs to close normally
+
+killall + nameOfTheProcess: kill all the processes with the specified name
+
+halt: shutdown the computer (needs root wrights)
+
+reboot: needs root wrigths
+
+"&": at the end a command launch the command in the background
+
+nohup: detached a process from the console
+Ctrl + Z: pause the running process
+
+bg: the process will run in the background
+
+jobs: find the processes running on the background
+
+fg %2: put the process two in the frontground
+
+at + HH:MM: execute a command, Ctrl + D to exit, create what we called a job with a number
+
+at 14:17 tomorrow
+
+at now +5 minutes
+atq: lists the jobs
+
+atrm + numberOfTheJobToRemove: remove a the specified job
+
+whatis: mini man
+
+tar -cfv ARCHIVE_NAME.tar MY_DIRECTORY: create an archive and assemble it in a file
+
+tar -tf MY_ARCHIV.tarE: to see what there is in an archive
+
+tar -rvf MY_ARCHIV.tarE MY_NEW_FILE: add a file to the archive
+
+tar -xvf MY_ARCHIVE.tar: extract an archive
+gzip MY_ARCHIVE.tar: compress the archive
+
+gunzip MY_ARCHIVE.tar.gz: decompress the compressed archive
+
+See also bzip2 and bunzip2
+
+tar -zcvf MY_ARCHIVE.tar.gz MY_DIRECTORY: create an compressed archive
+
+tar -zxvf MY_ARCHIVE.tar.gz: extract an archive
+
+tar -jcvf ... / tar -jxvf ... ==>bzip2
+zcat, zmore, zless: equivalent with a compressed file
+
+unzip ARCHIVE.zip: unzip an zip file
+
+unzip -l ARCHIVE.zip: see the content of the zip file
+zip -r MY_ZIP.zip MY_SOURCE:
+unrar e ... / unrar l ...
+
+Asymetric cryptogrophy = RSA
+ssh accountName@ippublic: se connecter en ssh
+openssh-server: transform your device into a ssh server
+ssh-keygen -t generate rsa
+wget httpAddress or ftpAddress: download a file
+lynx, links: console browser
+wget --background -c httpAddress: retry to download where you stop, put the proccess on the background
+scp: Secure CopPy
+ftp ftp.debian.org => anonymous
+put: using ftp
+get: using ftp
+!cd: do the command on your computer
+sftp userAccount@IPpublic: ftp secure
+rsync -avr --delete --backup --backup-dir=/home/ursa/backup_supr DIR usrAccount@IPpublic:SYNCDIR: synchronize two directories and save the deleted files, the syncDirectory is on a remote client
+host: convert ip domain-name
+whois: find about a domain-name
+ifconfig: ip address, interface = eth0, wlan0
+ifconfig eth0 up: up the interface eth0
+netstat -i: stat of the interface
+netstat -uta: show all the connections, -n give you the ports number
+netstat -lt: listening connections
+netstat -s: network stats
+iptables -L --line-numbers -n: lists the firewall rules plus the number of the rule
+iptables -F: reinitialize all the firewall rules
+iptables -A (chain=OUTPUT/INPUT) -p (protocol) --dport (port) -j decision: add a new rule
+iptables -D chain rulenum: delete a rule
+iptables -I chain rulenum: insert a rule at the specified position
+ufw: Uncomplicated FireWall -> search
+/configure , make , sudo make install/uninstall= compilation
+vim/emacs
+#!/bin/bash => first line of a bash
+./myScript: execute a script => do a chmod +x before
+bash -x monScript: debug
+echo $PATH: viewing the path
+echo -e "Message\nAutre Message"
+double quotes"": bash analyze what is between ""
+back quotes: execute what is between
+simple quotes: variable
+read: the user put some text
+let: for the math
+env: display the environment variables
+xargs: find . -name "*.bak" -print0 | xargs -0 -I file mv file ~/old.files
+bc: decimal numbers
+shfit: number of parameters sup to ç
+tab=('val1' 'val2'): array
+tab[2]='valeur2'
+echo {tab[1]}: display tab[1]
