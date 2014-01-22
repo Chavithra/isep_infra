@@ -1,0 +1,13 @@
+cURL is used to make http requests to an url.
+
+example :
+curl http://www.somedomain.com
+
+--request
+the value of the --request parameter can have differents values like GET, POST, DELETE, PUT
+GET is the default parameter.
+    curl --request GET 'http://yilmazhuseyin.com/blog/dev/'
+
+--add
+to add data to requests, use --data parameter.
+    curl --request POST 'http://www.somedomain.com/login/' --data 'username=myusername&password=mypassword'
